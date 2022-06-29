@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include<string>
+using namespace std;
 void Calculate(float a,float b) {
 	float sum = a + b;
 	float divide = a / b;
@@ -15,10 +16,16 @@ void Calculate(float a,float b) {
 		std::cout << "\nbasic math - result is (but we change minus to plus) : " << currentSubtraction;
 	}
 }
+float ValueReturnFunc(float power, float plusPower) {
+	float currentPower = power + plusPower;
+	return currentPower;
+	
+}
 int main() {
-	using namespace std;
+	
 	//Skills
-	int power= 100;
+	float power= 100.0f;
+	float plusPower=15.0f;
 	
 	double mana = 5.7;
 	//healths
@@ -42,6 +49,7 @@ int main() {
 	std::cout << "\n" << playerName << "'s remains health is : " << currentHealth;
 
 	Calculate(a,b);
-	
+	float additionalPower= ValueReturnFunc(power,plusPower);
+	std::cout << "\n" << playerName << "'s current power is: " << additionalPower;
 
 }
