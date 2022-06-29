@@ -22,6 +22,6 @@ int main() {
 
 
 	std::cout << "hello! "<<playerName;
-	std::cout << "\nPlayers remains health is : " << health - damage;
+	std::cout <<"\n" << playerName << "'s remains health is : " << health - damage;
 
 }
