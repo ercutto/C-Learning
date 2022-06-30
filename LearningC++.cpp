@@ -21,6 +21,20 @@ float ValueReturnFunc(float power, float plusPower) {
 	return currentPower;
 	
 }
+void states(int i) {
+	switch (i) {
+	case 1:
+		std::cout << "\n Selected state is : " << i;
+		break;
+	case 2:
+		std::cout << "\n Selected state is : " << i;
+		break;
+	default:
+		std::cout << "\n Selected state is : None";
+		break;
+	}
+   
+}
 int main() {
 	
 	//Skills
@@ -51,5 +65,5 @@ int main() {
 	Calculate(a,b);
 	float additionalPower= ValueReturnFunc(power,plusPower);
 	std::cout << "\n" << playerName << "'s current power is: " << additionalPower;
-
+	states(1);
 }
