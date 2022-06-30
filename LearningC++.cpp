@@ -35,6 +35,13 @@ void states(int i) {
 	}
    
 }
+void count(int count) {
+	std::cout << "\nForeach loop count number " << count << endl;
+}
+	
+void whileCount(int wCount) {
+		std::cout << "\n--While loop count number " << wCount << endl;
+	}
 int main() {
 	
 	//Skills
@@ -58,6 +65,8 @@ int main() {
 	//basic calculations
 	float a = 6.0f;
 	float b = 12.0f;
+
+	int varForWhileLoop = 0;
 	
 	std::cout << "hello! " << playerName;
 	std::cout << "\n" << playerName << "'s remains health is : " << currentHealth;
@@ -66,4 +75,13 @@ int main() {
 	float additionalPower= ValueReturnFunc(power,plusPower);
 	std::cout << "\n" << playerName << "'s current power is: " << additionalPower;
 	states(1);
+	for (int x = 0; x < 5; x++)
+	{
+		count(x);
+	}
+	while (varForWhileLoop<10)
+	{
+		whileCount(varForWhileLoop);
+		varForWhileLoop++;
+	}
 }
