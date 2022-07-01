@@ -65,9 +65,14 @@ int main() {
 	//basic calculations
 	float a = 6.0f;
 	float b = 12.0f;
-
+	//while
 	int varForWhileLoop = 0;
 	
+	// Array's
+	int myArray[10] = { 5,15,40,50,35,30,70,27,14,12 };
+	int randomNumbers[5]={};
+	string names[4] = { "Hanzo","Kenzo","Ginsoki","Jango" };
+
 	std::cout << "hello! " << playerName;
 	std::cout << "\n" << playerName << "'s remains health is : " << currentHealth;
 
@@ -84,4 +89,27 @@ int main() {
 		whileCount(varForWhileLoop);
 		varForWhileLoop++;
 	}
+
+	for (int i = 0; i < size(myArray); i++)
+	{
+		cout << "Array " << i << " values is :" << myArray[i]<<endl;
+	}
+	for (int i = 0; i < size(names); i++)
+	{
+		if (names[i]!="Hanzo")
+		{
+			cout << names[i] << " is not igual Hanzo" << endl;
+		}
+	}
+
+	for (int i = 0; i < size(randomNumbers); i++)
+	{
+		randomNumbers[i] = rand();
+
+	}
+	for (int i = 0; i <size(randomNumbers); i++)
+	{
+		cout<<"created "<<i<<" element is: " << randomNumbers[i]<<endl;
+	}
+
 }
