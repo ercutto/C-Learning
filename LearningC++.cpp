@@ -120,11 +120,18 @@ int main() {
 	}
 
 	cout << "c value is : " <<c<<" The adrress of c :" << pointer_c << endl;
-	//creating new player from player class
+	//creating new player from player class whith constructor values
+	cout << "creating new player from player class whith constructor values" << endl;
+	Player defaultPLayer = Player();
+	cout << "health is : " << defaultPLayer.health << endl;
+	cout << "mana is : " << defaultPLayer.mana << endl;
+	cout << "health is : " << defaultPLayer.power << endl;
+	// we create new player with new values
 	Player ShadowMan = Player();
 	ShadowMan.health = 100.0f;
 	ShadowMan.mana = 80.0f;
 	ShadowMan.power = 85.0f;
+	cout << "we create new player with new values" << endl;
 	cout << "health is : " << ShadowMan.health << endl;
 	cout << "mana is : " << ShadowMan.mana << endl;
 	cout << "health is : " << ShadowMan.power << endl;
