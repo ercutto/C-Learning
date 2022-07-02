@@ -2,6 +2,13 @@
 #include <iostream>
 #include<string>
 using namespace std;
+class Player {
+public:
+	string playerName;
+	float power;
+	double mana;
+	float health;
+};
 void Calculate(float a,float b) {
 	float sum = a + b;
 	float divide = a / b;
@@ -118,5 +125,11 @@ int main() {
 	}
 
 	cout << "c value is : " <<c<<" The adrress of c :" << pointer_c << endl;
-
+	//creating new player from player class
+	Player ShadowMan = Player();
+	ShadowMan.playerName = "GustinGuidener";
+	ShadowMan.health = 100.0f;
+	ShadowMan.mana = 80.0f;
+	ShadowMan.power = 85.0f;
+	
 }
