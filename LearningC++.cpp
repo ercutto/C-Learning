@@ -73,6 +73,11 @@ int main() {
 	int randomNumbers[5]={};
 	string names[4] = { "Hanzo","Kenzo","Ginsoki","Jango" };
 
+	//Pointer And fererences
+	int c = 5;
+	int d = 7;
+	int* pointer_c = &c;
+	int& refTo_c = d;
 	std::cout << "hello! " << playerName;
 	std::cout << "\n" << playerName << "'s remains health is : " << currentHealth;
 
@@ -111,5 +116,7 @@ int main() {
 	{
 		cout<<"created "<<i<<" element is: " << randomNumbers[i]<<endl;
 	}
+
+	cout << "c value is : " <<c<<" The adrress of c :" << pointer_c << endl;
 
 }
