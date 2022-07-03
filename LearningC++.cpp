@@ -147,4 +147,18 @@ int main() {
 	ShadowMan.Run();
 	ShadowMan.Attack();
 	ShadowMan.Jump();
+	//Finding ShadowMan address in memory
+	cout << "\nFinding ShadowMan address in memory &\n accesing players variables from pointer! &\naccessing players variables from references" << endl;
+	Player* playerPtr  = &ShadowMan;//pointer
+	Player& playerRef = ShadowMan;// reference
+	cout << "Player address is : " << playerPtr<<endl;
+	//accesing players variables from pointer! (->)
+	playerPtr->health = 145.0f;
+	playerPtr->power = 100.0f;
+	cout << "Players function from pointer" << endl;
+	playerPtr->Attack();
+	//accessing players variables from references
+	playerRef.health = 75.0f;
+	cout << "Players function from reference" << endl;
+	playerRef.Attack();
 }
