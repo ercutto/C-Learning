@@ -133,8 +133,13 @@ int main() {
 	ShadowMan.power = 85.0f;
 	cout << "we create new player with new values" << endl;
 	cout << "health is : " << ShadowMan.health << endl;
-	cout << "mana is : " << ShadowMan.GetMana()<< endl;
+	cout << "mana is : " << ShadowMan.GetMana()<< endl;//we used get mana because its private variable
 	cout << "health is : " << ShadowMan.power << endl;
+	// Archer Character with 2nd way constructor
+	Player ArcherMan = Player(120.0f,135.0f,40.0f);
+	cout << "ArcherMan health: " << ArcherMan.health << endl;
+	cout << "ArcherMan mana: " << ArcherMan.power << endl;
+	cout << "ArcherMan health: " << ArcherMan.GetMana() << endl;
 	//shadowMan functions
 	ShadowMan.Idle();
 	ShadowMan.Walk();

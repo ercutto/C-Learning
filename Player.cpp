@@ -8,7 +8,12 @@ Player::Player()
 	mana = 90.0f;
 	power = 115.0f;
 }
-
+//2nd way to make constructor
+Player::Player(float _power, float _health, float _mana) {
+	this->power = _power;
+	this->health = _health;
+	this->mana = _mana;
+}
 Player::~Player() {
 
 }

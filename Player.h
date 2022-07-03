@@ -8,6 +8,7 @@ class Player
 
 public:
 	Player();
+	Player(float _power, float _health, float _mana);
 	~Player();
 	
 	float power;
