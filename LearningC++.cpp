@@ -135,5 +135,11 @@ int main() {
 	cout << "health is : " << ShadowMan.health << endl;
 	cout << "mana is : " << ShadowMan.GetMana()<< endl;
 	cout << "health is : " << ShadowMan.power << endl;
-	
+	//shadowMan functions
+	ShadowMan.Idle();
+	ShadowMan.Walk();
+	ShadowMan.Crouch();
+	ShadowMan.Run();
+	ShadowMan.Attack();
+	ShadowMan.Jump();
 }

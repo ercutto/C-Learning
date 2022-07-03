@@ -1,5 +1,5 @@
 #pragma once
-
+#include<string>
 
 
 
@@ -17,6 +17,15 @@ public:
 	void setMana(float _mana);
 
 	float GetMana();
+
+	//Adding Players actions
+	void Idle();
+	void Walk();
+	void Run();
+	void Crouch();
+	void Jump();
+	void Attack();
+	
 private:
 	float mana;
 	
