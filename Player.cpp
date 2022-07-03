@@ -10,3 +10,11 @@ Player::Player()
 Player::~Player() {
 
 }
+
+float Player::GetMana()
+{
+	return this->mana;
+}
+void Player::setMana(float _mana) {
+	this->mana = _mana;
+}

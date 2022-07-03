@@ -124,16 +124,16 @@ int main() {
 	cout << "creating new player from player class whith constructor values" << endl;
 	Player defaultPLayer = Player();
 	cout << "health is : " << defaultPLayer.health << endl;
-	cout << "mana is : " << defaultPLayer.mana << endl;
+	cout << "mana is : " << defaultPLayer.GetMana() << endl;
 	cout << "health is : " << defaultPLayer.power << endl;
 	// we create new player with new values
 	Player ShadowMan = Player();
 	ShadowMan.health = 100.0f;
-	ShadowMan.mana = 80.0f;
+	ShadowMan.setMana(125.0f);
 	ShadowMan.power = 85.0f;
 	cout << "we create new player with new values" << endl;
 	cout << "health is : " << ShadowMan.health << endl;
-	cout << "mana is : " << ShadowMan.mana << endl;
+	cout << "mana is : " << ShadowMan.GetMana()<< endl;
 	cout << "health is : " << ShadowMan.power << endl;
 	
 }

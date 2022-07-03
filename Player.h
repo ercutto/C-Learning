@@ -11,8 +11,14 @@ public:
 	~Player();
 	
 	float power;
-	double mana;
+	
 	float health;
+
+	void setMana(float _mana);
+
+	float GetMana();
+private:
+	float mana;
 	
 };
 
